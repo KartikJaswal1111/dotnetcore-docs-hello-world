@@ -3,10 +3,140 @@
 @{    
     ViewData["Title"] = "Home page";
 }
-<div class="jumbotron">
-    <h1>Kartik Jaswal 500238073</h1>
-    <p class="lead">First Web App in the Azure App Service.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Jaswal - Tech Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+    <div class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+
+        <!-- Header Section -->
+        <header class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-6 mb-8 flex flex-col sm:flex-row items-center justify-between">
+            <div class="text-center sm:text-left mb-4 sm:mb-0">
+                <h1 class="text-4xl font-extrabold text-blue-700 mb-2">Kartik Jaswal</h1>
+                <p class="text-lg text-gray-600">ID: 500238073</p>
+            </div>
+            <div class="flex-shrink-0">
+                <!-- Placeholder image for profile picture -->
+                <img src="https://placehold.co/120x120/a78bfa/ffffff?text=KJ" alt="Kartik Jaswal Profile" class="rounded-full border-4 border-blue-400 shadow-md w-24 h-24 sm:w-32 sm:h-32 object-cover">
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="w-full max-w-4xl grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- About Me Section -->
+            <section class="lg:col-span-2 bg-white shadow-lg rounded-xl p-6">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4 pb-2 border-b-2 border-blue-200">About Me</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Hello! I'm Kartik Jaswal, a passionate and tech-savvy individual with a keen interest in software development, data analysis, and emerging technologies. I thrive on solving complex problems and am always eager to learn new tools and methodologies to enhance my skills.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    My journey in technology is driven by curiosity and a desire to build impactful solutions. I am committed to continuous learning and staying abreast of the latest advancements in the tech world.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="lg:col-span-1 bg-white shadow-lg rounded-xl p-6">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4 pb-2 border-b-2 border-blue-200">Skills</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Programming (Python, Java, C#)</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Web Development (HTML, CSS, JavaScript, React, ASP.NET)</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Databases (SQL, NoSQL)</span>
+                    <span class="bg-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Cloud Platforms (Azure, AWS basics)</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Data Analysis & Visualization</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Problem Solving</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full shadow-sm">Version Control (Git)</span>
+                </div>
+            </section>
+
+            <!-- Projects Section (Placeholder) -->
+            <section class="lg:col-span-3 bg-white shadow-lg rounded-xl p-6">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4 pb-2 border-b-2 border-blue-200">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Project Title 1</h3>
+                        <p class="text-gray-600 text-sm mb-3">A brief description of the project, its purpose, and the technologies used. Highlight your contribution.</p>
+                        <a href="#" class="text-blue-500 hover:underline text-sm font-medium">View Project &rarr;</a>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Project Title 2</h3>
+                        <p class="text-gray-600 text-sm mb-3">Another project showcasing your skills in a different area. Mention the impact or challenges overcome.</p>
+                        <a href="#" class="text-blue-500 hover:underline text-sm font-medium">View Project &rarr;</a>
+                    </div>
+                    <!-- Add more project cards as needed -->
+                </div>
+                <p class="text-center text-gray-500 mt-6">More projects coming soon!</p>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="lg:col-span-3 bg-white shadow-lg rounded-xl p-6">
+                <h2 class="text-3xl font-bold text-blue-600 mb-4 pb-2 border-b-2 border-blue-200">Contact</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Feel free to reach out if you'd like to connect or discuss potential collaborations.
+                </p>
+                <ul class="list-none p-0 m-0 space-y-2">
+                    <li>
+                        <a href="mailto:kartik.jaswal@example.com" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                            kartik.jaswal@example.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm-2.5 7.5a.5.5 0 01.5-.5h4a.5.5 0 010 1h-4a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path></svg>
+                            LinkedIn (Link Coming Soon)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM6.5 9.5a.5.5 0 01.5-.5h6a.5.5 0 010 1h-6a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path></svg>
+                            GitHub (Link Coming Soon)
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="w-full max-w-4xl text-center text-gray-500 text-sm mt-8 py-4 border-t border-gray-200">
+            &copy; 2025 Kartik Jaswal. All rights reserved.
+        </footer>
+
+    </div>
+</body>
+</html>
+
 
 
 
